@@ -46,21 +46,25 @@ The polarity of the motors does not matter for this one.
 2. If the steering and forward/revers are switched, use the "Switch channel 1 & 2" function to change it.
 3. Now if one or both of the channels are reversed use the "Invert channel X" functions to fix the reversed channels.
 
-## Manufacturing Section
+## Manufacturing with EasyEDA and JLCPCB
 The ESC is designed to be cheaply manufactured in batches as small as 5. (The lowest quantity JLC will manufacture)
 The last batch of 5 from JLC cost 22€ including shipping.
 
 The easiest way to get your own ESC manufactured is by importing the .epro file to EasyEDA as a professional projekt.
+You can find the file under Hardware/Version/...
 Now you need to press order/Order PCB and it will automatically import all the necessary data. Before ordering it will do a design rule check. It should not return any errors and you can continue with the order after it. 
 You don't need to change any settings this way except selecting PCB Assembly. You can change the color, or to lead free finish on the PCB if you want, this does not impact the function at all.
 Now you can continue to the folliwing steps without needing to change anything and finish your order. Don't forget to appy coupons JLC gives out at checkout.
 
 If you want to order larger quanteties, you can pannelize the PCB in easyEDA under Tools/Panelize. This can be cheaper compared to just ordering a larger number of PCBs. You need to chose "Panel by Customer" when ordering if you do that.
 
-the other way to get your own PCB manufactured is to upload the Gerber, BOM and CPL file to a manufacturer of choice.
+## Manufacturing with gerber files
+The other way to get your own PCB manufactured is to upload the Gerber, BOM and CPL file to a manufacturer of choice.
+You can find the files under Hardware/Version/...
 If you do it with JLC you might need to realign the components. For Other PCB manufacturers everything should work the same, but this was not tested.
 
-All resistors, ZVS Diodes and capacitors are generic. They can be replaced with same spec ones if necessary.
+## Substituting components for manufacturing
+All resistors, TVS Diodes and capacitors are generic. They can be replaced with same spec ones if necessary.
 There are generics of the DRV8870 which should work the same, but those were not tested.
 The Attiny816 can be replaced with an Attiny1616 if the 816 is not available for whatever reason.
 The LDO can be replaced with a same spec LDO if necessary too.
