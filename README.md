@@ -14,6 +14,7 @@ The 3 pins at the bottom are for flashing the MCU and are not used in normal ope
 The polarity of the motors does not matter, and can be flipped later in software through the third signal line;
 
 ## Programming section
+On startup the red LED wil blink once, and the esc will beep once plus once for every 25% mixing. (Up to 5 times)
 To program the ESC, power it on and wait for the red LED blink a second time.
 The ESC is now in programming mode. 
 Any non zero input on the Signal 1 and Signal 2 will end the programming mode. The red LED will be permanently on when in driving mode. 
@@ -46,7 +47,8 @@ The polarity of the motors does not matter for this one.
 2. If the steering and forward/revers are switched, use the "Switch channel 1 & 2" function to change it.
 3. Now if one or both of the channels are reversed use the "Invert channel X" functions to fix the reversed channels.
 
-## Manufacturing with EasyEDA and JLCPCB
+## Manufacturing section
+### Manufacturing with EasyEDA and JLCPCB
 The ESC is designed to be cheaply manufactured in batches as small as 5. (The lowest quantity JLC will manufacture)
 The last batch of 5 from JLC cost 22€ including shipping.
 
@@ -58,12 +60,12 @@ Now you can continue to the folliwing steps without needing to change anything a
 
 If you want to order larger quanteties, you can pannelize the PCB in easyEDA under Tools/Panelize. This can be cheaper compared to just ordering a larger number of PCBs. You need to chose "Panel by Customer" when ordering if you do that.
 
-## Manufacturing with gerber files
+### Manufacturing with gerber files
 The other way to get your own PCB manufactured is to upload the Gerber, BOM and CPL file to a manufacturer of choice.
 You can find the files under Hardware/Version/...
 If you do it with JLC you might need to realign the components. For Other PCB manufacturers everything should work the same, but this was not tested.
 
-## Substituting components for manufacturing
+### Substituting components for manufacturing
 All resistors, TVS Diodes and capacitors are generic. They can be replaced with same spec ones if necessary.
 There are generics of the DRV8870 which should work the same, but those were not tested.
 The Attiny816 can be replaced with an Attiny1616 if the 816 is not available for whatever reason.
