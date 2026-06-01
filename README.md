@@ -57,7 +57,7 @@ The last batch of 5 from JLC cost 22€ including shipping.
 
 The easiest way to get your own ESC manufactured is by importing the .epro file to EasyEDA as a professional projekt.
 You can find the file under Hardware/Version/...
-Now you need to press order/Order PCB and it will automatically import all the necessary data. Before ordering it will do a design rule check. It should not return any errors and you can continue with the order after it. 
+Now you need Open the PCB and press order/Order PCB and it will automatically import all the necessary data. Before ordering it will do a design rule check. It should not return any errors and you can continue with the order after it. 
 You don't need to change any settings this way except selecting PCB Assembly. You can change the color, or to lead free finish on the PCB if you want, this does not impact the function at all.
 Now you can continue to the folliwing steps without needing to change anything and finish your order. Don't forget to appy coupons JLC gives out at checkout.
 
