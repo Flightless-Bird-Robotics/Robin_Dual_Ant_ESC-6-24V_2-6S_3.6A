@@ -1,3 +1,7 @@
+# Software
 The software for the ESC is placed here
 To uploade it to the ESC you need the Arduino IDE and MegaTinyCore https://github.com/SpenceKonde/megaTinyCore
 and a Serial to USB Adapter with an added schottkey diode https://github.com/SpenceKonde/AVR-Guidance/blob/master/UPDI/jtag2updi.md
+
+## The current version is V4
+The older version should not be used for harware version 4 and upwards
