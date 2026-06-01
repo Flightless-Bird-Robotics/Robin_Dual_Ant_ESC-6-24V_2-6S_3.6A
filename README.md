@@ -11,7 +11,8 @@ The PCB without the pannels is 22x22mm and weighs 2.3g.
 The Panels at the top and bottom are just for manufacturing and can be snapped off to reduce the overall size and weight.
 <img width="3000" height="4000" alt="ESC_without_panels" src="https://github.com/user-attachments/assets/79431841-af35-4cf3-a399-0d985aca78da" />
 The 3 pins at the bottom are for flashing the MCU and are not used in normal operation.
-The polarity of the motors does not matter, and can be flipped later in software through the third signal line;
+I recomnend to conect the motor 1 to the left drive motor and motor 2 to the right drive motor. The motor 2 polarity should be reversed. This makes mixing later on much easier, and ensures that overhead driving will work correctly. 
+
 
 ## Programming section
 On startup the red LED wil blink once, and the esc will beep once plus once for every 25% mixing. (Up to 5 times)
@@ -42,10 +43,10 @@ The Under voltage lockout is without function for now, sice I mixed the pin func
 
 ## Mixing section
 How to set up the ESC for internal mixing with signal 1 for steering and signal 2 for forwards/reverse.
-The polarity of the motors does not matter for this one.
-1. chose on of the 4 mix settings. I recommend to try out every one to get the steering level you are most comfortable with.
-2. If the steering and forward/revers are switched, use the "Switch channel 1 & 2" function to change it.
-3. Now if one or both of the channels are reversed use the "Invert channel X" functions to fix the reversed channels.
+1. Check if motor 1 is the right side drive motor, and the motor is connected with normal polarity.
+2. Check if motor 2 is the left side drive motor, and the motor is connected with reversed polarity.
+3. Chose on of the 4 mix settings. I recommend to try out every one to get the steering level you are most comfortable with.
+
 
 ## Manufacturing section
 ### Manufacturing with EasyEDA and JLCPCB
@@ -72,7 +73,6 @@ The Attiny816 can be replaced with an Attiny1616 if the 816 is not available for
 The LDO can be replaced with a same spec LDO if necessary too.
 
 
-
 ## Flashing section
 The microcontroller is flashed using the Arduino IDE and MegaTinyCore from Spencer Konde https://github.com/SpenceKonde/megaTinyCore
 To flash the microcontroller a USB to serial adapter is necessary. I used one based on a CP2102M and a schottky diode between RX and TX.
@@ -82,5 +82,6 @@ Once you have installed the MegaTinyCore into the Arduino IDE you need to set th
 Now you can connect the UDPI, 5V and GND from the serial adapter to the 3 pins at the bottom.
 <img width="2137" height="3023" alt="Dual_ESC_6-24V_3 6A_V3_Flash_Wiring" src="https://github.com/user-attachments/assets/22267136-7ebc-4148-8c87-93503a2305af" />
 <img width="4000" height="3000" alt="MCU_Flashing_Photo" src="https://github.com/user-attachments/assets/989af4ba-63e3-4a8d-903a-875a5fa6acf0" />
-Now press upload in the Arduino IDE. 
+Now select "Burn bootloader" at the bottom of the "Tools" menue. 
+Now you can press upload in the Arduino IDE to upload the code. 
 You can check if the microcontroller was flashed sucsecfully by the red led blinking, indicating the programming mode. The ESC can now be used.
