@@ -1,4 +1,4 @@
-**The UVLO is without function on this Hardware**
+## The UVLO is without function on this Hardware
 This is the third hardware version of the dual ant esc
 Changes:  -Changed the programing pads to multilayer to make it easier to program with a serial adapter
           -Added through holes to the VIN, GND and motor pads, to give the option to add 2.54mm pitch throughole pins
