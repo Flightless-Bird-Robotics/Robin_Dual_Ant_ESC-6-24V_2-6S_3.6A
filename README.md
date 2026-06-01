@@ -7,7 +7,7 @@ The internal BEC can supply up to 100mA for a receiver. An external BEC should b
 The PCB without the pannels is 22x22mm and weighs 2.3g.
 
 ## Wiring section
-<img width="5011" height="3600" alt="Dual_ESC_6-24V_3 6A_V3_Wiring" src="https://github.com/user-attachments/assets/c53a9662-847e-455c-bca9-0dda34f41c5b" />
+<img width="5011" height="3600" alt="Dual_ESC_6-24V_3 6A_V3_Wiring" src="https://github.com/user-attachments/assets/e9b49bdd-8b55-4c8b-8f20-f452ad8734e8" />
 The Panels at the top and bottom are just for manufacturing and can be snapped off to reduce the overall size and weight.
 <img width="3000" height="4000" alt="ESC_without_panels" src="https://github.com/user-attachments/assets/79431841-af35-4cf3-a399-0d985aca78da" />
 The 3 pins at the bottom are for flashing the MCU and are not used in normal operation.
