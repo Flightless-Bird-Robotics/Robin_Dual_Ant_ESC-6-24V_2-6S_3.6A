@@ -2,13 +2,13 @@
 This ESC is designed for 150g Ant weight combat robots to drive N20 and N10 brushed motors.
 It takes standard RC PWM signals as inputs and supports internal mixing and overhead driving.
 The ESC is designed to be used with 2-6S, and a maximum current of 3.6A per channel.
-The ESC has internal current limmiting and thermal shutdown.
+The ESC has internal current limiting and thermal shutdown.
 The internal BEC can supply up to 100mA for a receiver. An external BEC should be used for voltages over 4S(16.8V).
-The PCB without the pannels is 22x22mm and weighs 2.3g.
+The PCB without the panels is 22x22mm and weighs 2.3g.
 
 ## Wiring section
 <img width="5011" height="3600" alt="Dual_ESC_6-24V_3 6A_V3_Wiring" src="https://github.com/user-attachments/assets/e9b49bdd-8b55-4c8b-8f20-f452ad8734e8" />
-The Panels at the top and bottom are just for manufacturing and can be snapped off to reduce the overall size and weight.
+The panels at the top and bottom are just for manufacturing and can be snapped off to reduce the overall size and weight.
 <img width="3000" height="4000" alt="ESC_without_panels" src="https://github.com/user-attachments/assets/79431841-af35-4cf3-a399-0d985aca78da" />
 The 3 pins at the bottom are for flashing the MCU and are not used in normal operation.
 I recomnend to conect the motor 1 to the left drive motor and motor 2 to the right drive motor. The motor 2 polarity should be reversed. This makes mixing later on much easier, and ensures that overhead driving will work correctly. 
