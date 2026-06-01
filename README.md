@@ -1,7 +1,7 @@
 # Robin_Dual_Ant_ESC-6-24V_2-6S_3.6A
-This ESC is designed for 150g Ant weight combat robots, to drive N20 and N10 brushed motors.
+This ESC is designed for 150g Ant weight combat robots to drive N20 and N10 brushed motors.
 It takes standard RC PWM signals as inputs and supports internal mixing and overhead driving.
-The ESC is designed to be used with 2-6S, and a maximum current of 3.6A.
+The ESC is designed to be used with 2-6S, and a maximum current of 3.6A per channel.
 The ESC has internal current limmiting and thermal shutdown.
 The internal BEC can supply up to 100mA for a receiver. An external BEC should be used for voltages over 4S(16.8V).
 The PCB without the pannels is 22x22mm and weighs 2.3g.
@@ -15,7 +15,7 @@ I recomnend to conect the motor 1 to the left drive motor and motor 2 to the rig
 
 
 ## Programming section
-On startup the red LED wil blink once, and the esc will beep once plus once for every 25% mixing. (Up to 5 times)
+On startup the red LED wil blink once, and the ESC will beep once plus once every cell found when UVLO is enabled.
 To program the ESC, power it on and wait for the red LED blink a second time.
 The ESC is now in programming mode. 
 Any non zero input on the Signal 1 and Signal 2 will end the programming mode. The red LED will be permanently on when in driving mode. 
@@ -35,11 +35,13 @@ If the right menu number is reached, wait for the red led to blink without any i
 | 8  | Invert channel 1 | Not inverted |
 | 9  | Invert channel 2 | Not inverted |
 | 10  | Switch channel 1 & 2 | Not switched |
-| 11  | (Without function) Under voltage lockout at 3V per cell  | UVLO off |
+| 11  | Under voltage lockout at 3V per cell  | UVLO off |
 | 12  | Wider deadzone on/off | off |
 | 13  | reset to default |  |
 
-The Under voltage lockout is without function for now, sice I mixed the pin functions between different packages.
+The UVLO only works when the ESC is connected to a full Lipo on startup, otherwise the ESC cannot detect the number of cells.
+On startup the ESC will beep once plus once every cell found.
+The motor drivers shut off at 6V, even without UVLO enabled.
 
 ## Mixing section
 How to set up the ESC for internal mixing with signal 1 for steering and signal 2 for forwards/reverse.
