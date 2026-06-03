@@ -11,8 +11,10 @@ The PCB without the panels is 22x22mm and weighs 2.3g.
 The panels at the top and bottom are just for manufacturing and can be snapped off to reduce the overall size and weight.
 <img width="3000" height="4000" alt="ESC_without_panels" src="https://github.com/user-attachments/assets/79431841-af35-4cf3-a399-0d985aca78da" />
 The 3 pins at the bottom are for flashing the MCU and are not used in normal operation.
-I recomnend to conect the motor 1 to the left drive motor and motor 2 to the right drive motor. The motor 2 polarity should be reversed. This makes mixing later on much easier, and ensures that overhead driving will work correctly. 
-
+I recomnend to connect the motor 1 to the left drive motor and motor 2 to the right drive motor. The motor 2 polarity should be reversed. This makes mixing later on much easier, and ensures that overhead driving will work correctly. 
+You can use standart 2.54mm pitch pins (2x for the battery and motors and 5x for the signal, 5V and GND) to connect the ESC. 
+<img width="1710" height="2715" alt="Dual_ESC_6-24V_3 6A_V4_With_Pins" src="https://github.com/user-attachments/assets/3474dcf3-7065-43a7-a8ca-2bd9c2cd474a" />
+Otherwide you can directly solder it. 
 
 ## Programming section
 On startup the red LED wil blink once, and the ESC will beep once plus once every cell found when UVLO is enabled.
@@ -56,7 +58,7 @@ The ESC is designed to be cheaply manufactured in batches as small as 5. (The lo
 The last batch of 5 from JLC cost 22€ including shipping.
 
 The easiest way to get your own ESC manufactured is by importing the .epro file to EasyEDA as a professional projekt.
-You can find the file under Hardware/Version/...
+You can find the file under Hardware/Version/... Now select import document and Library.
 Now you need Open the PCB and press order/Order PCB and it will automatically import all the necessary data. Before ordering it will do a design rule check. It should not return any errors and you can continue with the order after it. 
 You don't need to change any settings this way except selecting PCB Assembly. You can change the color, or to lead free finish on the PCB if you want, this does not impact the function at all.
 Now you can continue to the folliwing steps without needing to change anything and finish your order. Don't forget to appy coupons JLC gives out at checkout.
