@@ -7,7 +7,7 @@ The internal BEC can supply up to 100mA for a receiver. An external BEC should b
 The PCB without the panels is 22x22mm and weighs 2.3g.
 
 ## Wiring section
-<img width="5011" height="3600" alt="Dual_ESC_6-24V_3 6A_V3_Wiring" src="https://github.com/user-attachments/assets/e9b49bdd-8b55-4c8b-8f20-f452ad8734e8" />
+<img width="5011" height="3600" alt="Dual_ESC_6-24V_3 6A_V3_Wiring_V2" src="https://github.com/user-attachments/assets/a5a19099-0ec9-402b-90eb-904bed56f850" />
 The panels at the top and bottom are just for manufacturing and can be snapped off to reduce the overall size and weight.
 <img width="3000" height="4000" alt="ESC_without_panels" src="https://github.com/user-attachments/assets/79431841-af35-4cf3-a399-0d985aca78da" />
 The 3 pins at the bottom are for flashing the MCU and are not used in normal operation.
@@ -84,7 +84,7 @@ Details to make your own can be found here https://github.com/SpenceKonde/AVR-Gu
 Once you have installed the MegaTinyCore into the Arduino IDE you need to set the upload settings
 <img width="1502" height="1640" alt="Arduino Settings" src="https://github.com/user-attachments/assets/2c7c8970-1905-48ec-869b-44d9cad1d92b" />
 Now you can connect the UDPI, 5V and GND from the serial adapter to the 3 pins at the bottom.
-<img width="2137" height="3023" alt="Dual_ESC_6-24V_3 6A_V3_Flash_Wiring" src="https://github.com/user-attachments/assets/22267136-7ebc-4148-8c87-93503a2305af" />
+<img width="2137" height="3023" alt="Dual_ESC_6-24V_3 6A_V3_Flash_Wiring_V2" src="https://github.com/user-attachments/assets/634da66f-5a3b-4c58-b4c3-13df0d98d74c" />
 <img width="4000" height="3000" alt="MCU_Flashing_Photo" src="https://github.com/user-attachments/assets/989af4ba-63e3-4a8d-903a-875a5fa6acf0" />
 Now select "Burn bootloader" at the bottom of the "Tools" menue. 
 Now you can press upload in the Arduino IDE to upload the code. 
