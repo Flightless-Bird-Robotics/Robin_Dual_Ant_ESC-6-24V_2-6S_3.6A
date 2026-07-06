@@ -80,12 +80,17 @@ The LDO can be replaced with a same spec LDO if necessary too.
 ## Flashing section
 The microcontroller is flashed using the Arduino IDE and MegaTinyCore from Spencer Konde https://github.com/SpenceKonde/megaTinyCore
 To flash the microcontroller a USB to serial adapter is necessary. I used one based on a CP2102M and a schottky diode between RX and TX.
+It seems AM32 programmers works as well. I haven't tested this except with the one on the photo. The S pin goes on the UDPI pad.
+If you want to try, I recommend to get one where you can deliver 5V to the pins, so you don't need an extra voltage source for programming.
 Details to make your own can be found here https://github.com/SpenceKonde/AVR-Guidance/blob/master/UPDI/jtag2updi.md
 Once you have installed the MegaTinyCore into the Arduino IDE you need to set the upload settings
 <img width="1502" height="1640" alt="Arduino Settings" src="https://github.com/user-attachments/assets/2c7c8970-1905-48ec-869b-44d9cad1d92b" />
 Now you can connect the UDPI, 5V and GND from the serial adapter to the 3 pins at the bottom.
 <img width="2137" height="3023" alt="Dual_ESC_6-24V_3 6A_V3_Flash_Wiring_V2" src="https://github.com/user-attachments/assets/634da66f-5a3b-4c58-b4c3-13df0d98d74c" />
 <img width="4000" height="3000" alt="MCU_Flashing_Photo" src="https://github.com/user-attachments/assets/989af4ba-63e3-4a8d-903a-875a5fa6acf0" />
+<img width="3120" height="4208" alt="Dual_ESC_6-24V_3 6A_V4_Flash_AM32_1" src="https://github.com/user-attachments/assets/61314eb1-62df-4a66-b6c6-b1375d13fbe0" />
+<img width="3072" height="4096" alt="Dual_ESC_6-24V_3 6A_V4_Flash_AM32_3 jpg" src="https://github.com/user-attachments/assets/1b4f8100-c4e4-4158-87b4-2de336aa55e0" />
+<img width="3072" height="4096" alt="Dual_ESC_6-24V_3 6A_V4_Flash_AM32_2 jpg" src="https://github.com/user-attachments/assets/8e9e508e-5097-4013-bb99-45019e0c588b" />
 Now select "Burn bootloader" at the bottom of the "Tools" menue. 
 Now you can press upload in the Arduino IDE to upload the code. 
 You can check if the microcontroller was flashed sucsecfully by the red led blinking, indicating the programming mode. The ESC can now be used.
